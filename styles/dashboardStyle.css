@@ -2,33 +2,29 @@ body {
     margin: 10px;
     padding-top: 76px;
     background-color: #f8f9fa;
-    
 }
 
-
-
 .navbar {
-    background-color: rgba(50, 205, 50, 0.85) !important; 
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(50, 205, 50, 0.85) !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
-
 }
 
 .pin-container .pin-name {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none; /* Evita que o mouse trave no texto */
-        }
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
 
-        /* 2. Mostra o nome quando passa o mouse no container da bolinha */
-        .pin-container:hover .pin-name {
-            opacity: 1;
-        }
+.pin-container:hover .pin-name {
+    opacity: 1;
+}
 
-        /* 3. Efeito opcional: Aumenta a bolinha no hover */
-        .pin-container:hover .pin-dot {
-            transform: scale(1.2);
-        }
-        .pin-dot { transition: transform 0.2s; }
+.pin-container:hover .pin-dot {
+    transform: scale(1.2);
+}
+
+.pin-dot {
+    transition: transform 0.2s;
+}
