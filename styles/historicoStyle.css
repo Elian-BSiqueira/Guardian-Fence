@@ -1,0 +1,12 @@
+
+.historico-table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+
+.historico-table tbody tr:hover {
+    background-color: #bb1414;
+    cursor: pointer;
+}
