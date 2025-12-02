@@ -20,7 +20,7 @@ body {
 .pin-container .pin-name {
     opacity: 1;
     font-size: 0.7rem;
-    background-color: rgba(0,0,0,0.7) !important;
+    background-color: rgba(0, 0, 0, 0.001) !important;
     backdrop-filter: blur(4px);
 }
 
