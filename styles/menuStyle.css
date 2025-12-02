@@ -1,0 +1,27 @@
+.navbar {
+    background-color: rgb(102, 80, 7) !important; 
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(69, 43, 22, 0.548);
+    transition: background-color 0.3s ease;
+    
+}
+
+#menu {
+    background-color: rgba(4, 87, 4, 0.85) !important; 
+}
+
+.navbar, 
+.navbar .navbar-brand, 
+.navbar .nav-link, 
+.navbar .navbar-text,
+.navbar i {
+    color: #ffffff !important; /* Escolha sua cor aqui (ex: Branco #fff, Verde #2E7D32) */
+}
+
+/* Garante que a cor permaneça a mesma ao passar o mouse (opcional) */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #ffffff !important; /* Cor um pouco mais escura no hover */
+}
+
