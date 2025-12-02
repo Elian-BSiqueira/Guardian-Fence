@@ -1,4 +1,4 @@
-* {
+.tela-login-prop {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -78,7 +78,7 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-.logo {
+.tela-login-prop {
     width: 160px;
     margin-bottom: 10px;
 }
