@@ -6,40 +6,41 @@
     <title>Guardian-Fence - Propriedades</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="styles/menuStyle.css">
     <link rel="stylesheet" href="styles/dashboardStyle.css"> 
     <link rel="stylesheet" href="css/propriedadesStyle.css"> </head>
 <body>
-
-    <nav class="navbar fixed-top fixed-top navbar" >
+    <!-- Menu -->
+    <nav id="menu" class="fixed-top navbar shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="dashboard.html">
-                <img src="imgs/guardian-fence.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">Guardian-Fence
+            <a class="navbar-brand" href="#">
+            <img src="imgs/guardian-fence.png" alt="Logo" width="auto" height="51" class="d-inline-block">
+            Guardian Fence
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historico.html">Historico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="propriedades.html">Propriedades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="funcionarios.html">Funcionarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="PerfilPropi.html">Perfil</a>
-                    </li>
-                </ul>
-            </div>
+            <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Sair da conta</button>
         </div>
     </nav>
+    <!-- informacoes do usuario -->
+    <div class="bg-white border-bottom py-2 shadow-sm">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+                <div class="mb-2 mb-md-0 fw-bold text-success">
+                    <i class="bi bi-person-circle me-1"></i> Pedro Domador de Onças
+                </div>
+
+                <div class="d-flex gap-3 text-muted">
+                    <span>
+                        <i class="bi bi-envelope me-1"></i> PedroDomador@gmail.com
+                    </span>
+                    <span class="border-start ps-3">
+                        <i class="bi bi-card-text me-1"></i> 12*******-02
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <!-- Propriedades -->
     <div class="container propriedades-content mt-5 pt-5">
 
         <div class="d-flex justify-content-between align-items-center mb-4">
