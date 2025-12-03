@@ -1,8 +1,4 @@
-.tela-login-prop {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 * {
     margin: 0;
@@ -14,6 +10,44 @@ body {
     background: #0f3c0f;
     font-family: Arial, Helvetica, sans-serif;
     
+}
+
+/* Exemplo de CSS para 'tela-login-prop' */
+.tela-login-prop {
+    /* É crucial que o container pai tenha position: relative */
+    position: relative; 
+    /* Outras propriedades existentes... */
+    /* width: 400px; */
+    /* height: 600px; */
+    /* margin: 50px auto; */
+    /* ... */
+}
+
+.icon-voltar {
+    height: 5px;
+    /* Define o posicionamento em relação ao pai mais próximo com 'position: relative' */
+    position: absolute; 
+    
+    /* Move o elemento para 10px do topo do container pai */
+    top: 10px; 
+    
+    /* Move o elemento para 10px da esquerda do container pai */
+    left: 10px; 
+    
+    /* Opcional: Garante que o ícone fique sobre outros elementos */
+    z-index: 10;
+    
+    /* Opcional: Remove a decoração do link se não for desejada */
+    text-decoration: none;
+    
+    /* Cor do ícone (ajuste conforme o tema) */
+    color: #fff; 
+}
+
+/* Opcional: Estilo ao passar o mouse */
+.icon-voltar:hover {
+    color: #ccc; 
+    /* Outros estilos de hover... */
 }
 
 .cerca-madeira {
