@@ -1,153 +1,184 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Guardian-Fence - Propriedades</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/dashboardStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/menuStyle.css">
-  </head>
-  <body>
-    <div class="container">
-        <!-- Menu -->
-        <div class="container menu">
-            <nav id="menu" class="navbar fixed-top fixed-top navbar" >
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="dashboard.html">
-                <img src="imgs/guardian-fence.png" alt="Logo" width="auto" height="51" class="d-inline-block align-text-center">Guardian-Fence
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="dashboard.html">Inicio</a>
-                    </li>
-                    <li class="nav-item"> 
-                    <a class="nav-link active" href="historico.html">Historico</a> </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="propriedades.html">Propriedades</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="funcionarios.html">Funcionarios</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        </div>
+    <link rel="stylesheet" href="styles/dashboardStyle.css"> 
+    <link rel="stylesheet" href="css/propriedadesStyle.css">
+</head>
+<body>
+
     <!-- Menu -->
-
-    <!-- Codigo de funcionario -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid d-flex justify-content-between">
-            
-            <span class="navbar-text">
-            Codigo: 7846GTDC123
-            </span>
-            <i class="bi bi-clipboard fs-4" style="cursor: pointer;"></i>  
+    <nav id="menu" class="fixed-top navbar shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/guardian-fence.png" alt="Logo" width="auto" height="51" class="d-inline-block">
+                Guardian Fence
+            </a>
+            <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Sair da conta</button>
         </div>
     </nav>
 
-    <!-- Funcionarios -->
-    <nav class="mt-3 navbar bg-body-tertiary">
-        <div class="container-fluid d-flex justify-content-between">
-            <span class="navbar-text">
-            Funcionarios Ativos:
-            </span>
-            
-        </div>
-    </nav>
+    <!-- informacoes do usuario -->
+    <div class="bg-white border-bottom py-2 shadow-sm">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+                <div class="mb-2 mb-md-0 fw-bold text-success">
+                    <i class="bi bi-person-circle me-1"></i> Pedro Domador de Onças
+                </div>
 
-    <div class="card mt-3">
-        <div class="card-body">
-            <h5 class="card-title">Lucas</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Capataz</h6>
-            <p class="card-text">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Setor responsavel: Norte </li>
-                    <li class="list-group-item">Status:
-                        <select class="mt-1 form-select" aria-label="Default select example">
-                            <option selected>Ativo</option>
-                            <option value="1">Inativo</option>
-                            <option value="2">Afastado</option>
-                        </select>
-                    </li>
-                    <li class="list-group-item">Telefone: (83) 99999-9999</li>
+                <div class="d-flex gap-3 text-muted">
+                    <span>
+                        <i class="bi bi-envelope me-1"></i> PedroDomador@gmail.com
+                    </span>
+                    <span class="border-start ps-3">
+                        <i class="bi bi-card-text me-1"></i> 12*******-02
+                    </span>
+                </div>
 
-                </ul>
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-outline-danger">Excluir</button>
             </div>
         </div>
     </div>
 
-    <div class="card mt-3">
-        <div class="card-body">
-            <h5 class="card-title">Rafael</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Vaqueiro</h6>
-            <p class="card-text">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Setor responsavel: Sul </li>
-                    <li class="list-group-item">Status:
-                        <select class="mt-1 form-select" aria-label="Default select example">
-                            <option selected>Ativo</option>
-                            <option value="1">Inativo</option>
-                            <option value="2">Afastado</option>
-                        </select>
-                    </li>
-                    <li class="list-group-item">Telefone: (83) 99999-9999</li>
+    <!-- Propriedades -->
+    <div class="container propriedades-content mt-5 pt-5">
 
-                </ul>
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-outline-danger">Excluir</button>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="h4 mb-0"><i class="bi bi-house-door-fill me-2 text-success"></i> Minhas Propriedades</h2>
+
+            <!-- botão que abre a telinha -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#solicitarAcessoModal">
+                <i class="bi bi-key me-1"></i> Solicitar acesso
+            </button>
+        </div>
+
+        <div class="row g-3">
+
+            <!-- PROPRIEDADE 1 -->
+            <div class="col-sm-6 col-lg-4">
+                <a href="dashboard.html?id=1" class="text-decoration-none text-body">
+                    <div class="card propriedade-card border-top border-5 border-success shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Fazenda Segredo</h5>
+                                <div class="propriedade-actions">
+                                    <i class="bi bi-pencil me-2 text-muted propriedade-action-icon" data-bs-toggle="tooltip" title="Editar"></i>
+                                    <i class="bi bi-trash text-danger propriedade-action-icon" data-bs-toggle="tooltip" title="Excluir"></i>
+                                </div>
+                            </div>
+                            <p class="card-text mb-0">500 hectares</p>
+                            <p class="card-text small text-muted">Área de pastagem e cultivo</p>
+                            <p class="card-text small text-primary fw-bold mt-2">Sensores Ativos: 24/25</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PROPRIEDADE 2 -->
+            <div class="col-sm-6 col-lg-4">
+                 <a href="dashboard.html?id=2" class="text-decoration-none text-body">
+                    <div class="card propriedade-card border-top border-5 border-primary shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Sítio da Colina</h5>
+                                <div class="propriedade-actions">
+                                    <i class="bi bi-pencil me-2 text-muted propriedade-action-icon"></i>
+                                    <i class="bi bi-trash text-danger propriedade-action-icon"></i>
+                                </div>
+                            </div>
+                            <p class="card-text mb-0">200g hectares</p>
+                            <p class="card-text small text-muted">Área de cultivo</p>
+                            <p class="card-text small text-primary fw-bold mt-2">Sensotres Ativos: 8/10</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PROPRIEDADE 3 -->
+            <div class="col-sm-6 col-lg-4">
+                 <a href="dashboard.html?id=3" class="text-decoration-none text-body">
+                    <div class="card propriedade-card border-top border-5 border-secondary shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Estância Sol Nascente</h5>
+                                <div class="propriedade-actions">
+                                    <i class="bi bi-pencil me-2 text-muted propriedade-action-icon"></i>
+                                    <i class="bi bi-trash text-danger propriedade-action-icon"></i>
+                                </div>
+                            </div>
+                            <p class="card-text mb-0">80 hectares</p>
+                            <p class="card-text small text-muted">Reserva flotttrestal</p>
+                            <p class="card-text small text-primary fw-bold mt-2">Sensores Ativos: 10/10</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PROPRIEDADE 4 -->
+            <div class="col-sm-6 col-lg-4">
+                 <a href="dashboard.html?id=4" class="text-decoration-none text-body">
+                    <div class="card propriedade-card border-top border-5 border-warning shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Fazenda Campo Novo</h5>
+                                <div class="propriedade-actions">
+                                    <i class="bi bi-pencil me-2 text-muted propriedade-action-icon"></i>
+                                    <i class="bi bi-trash text-danger propriedade-action-icon"></i>
+                                </div>
+                            </div>
+                            <p class="card-text mb-0">120 hectares</p>
+                            <p class="card-text small text-muted">Área de criação de gado</p>
+                            <p class="card-text small text-primary fw-bold mt-2">Sensohres Ativos: 5/6</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  modal solicitar acesso -->
+    <div class="modal fade" id="solicitarAcessoModal" tabindex="-1" aria-labelledby="solicitarAcessoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="solicitarAcessoLabel">Solicitar acesso à propriedade</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="col-form-label">Código da Propriedade:</label>
+                            <input type="text" class="form-control" placeholder="Ex: A1B2C3">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="col-form-label">Mensagem para o proprietário:</label>
+                            <textarea class="form-control" placeholder="Ex: Sou funcionário responsável pela área de sensores..."></textarea>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar solicitação</button>
+                </div>
+
             </div>
         </div>
     </div>
+    <!-- Fim do modal -->
 
-    <!-- Funcionarios pendentes -->
-     <nav class="mt-3 navbar bg-body-tertiary">
-        <div class="container-fluid d-flex justify-content-between">
-            <span class="navbar-text">
-            Funcionarios pendentes
-            </span>
-        </div>
-    </nav>
-
-    <div class="card mt-3">
-        <div class="card-body">
-            <h5 class="card-title">Pedro</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Vaqueiro</h6>
-            <p class="card-text">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Setor responsavel: Oeste </li>
-                    <li class="list-group-item">Telefone: (83) 99999-9999</li>
-
-                </ul>
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-outline-success">Admitir</button>
-                <button type="button" class="btn btn-outline-danger">Dispensar</button>
-            </div>
-        </div>
-    </div>
-
-
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <script>
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-        })
-    </script>
-  </body>
+</body>
 </html>
