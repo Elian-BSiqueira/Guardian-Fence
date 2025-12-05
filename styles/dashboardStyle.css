@@ -64,4 +64,12 @@ body {
 .logo-Syntasis {
     margin: 25px auto;
     justify-content: center;
+    text-align: center;
+}
+
+.quem-somos {
+    padding: 40px 10px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
