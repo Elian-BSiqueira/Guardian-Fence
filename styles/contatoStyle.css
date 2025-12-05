@@ -1,0 +1,48 @@
+
+body {
+    margin: 10px;
+    padding-top: 100px;
+    background-color: #f8f9fa;
+}
+
+.contato-formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: left; 
+}
+
+.contato-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato-formulario input:not([type="radio"]), 
+.contato-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.contato-formulario button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: whitesmoke;
+}
+
+.contato-formulario button:hover {
+    transform: scale(1.02);
+}
+
+.contato-formulario button a {
+    color:black;
+    text-decoration: none;
+
+}
